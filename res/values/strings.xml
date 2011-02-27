@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Bon Soir, me amor</string>
+    <string name="app_name">SmoothTalker</string>
+    <string name="accent_prompt">Select an Accent</string>
+    <string name="pitch_prompt">Select a Pitch</string>
+    <string name="speed_prompt">Select a Speed</string>
+    <string name="speak">Swoon Me...</string>
+</resources>

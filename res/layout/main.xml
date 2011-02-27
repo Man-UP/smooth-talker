@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:text="@string/hello"
+    android:layout_weight="0.5"
+    />
+<ImageView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/hunk_image"
+    android:layout_weight="0.3"
+	/>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.5"
+    >
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="fill_parent" 
+    android:text="@string/accent_prompt"
+    android:layout_weight="0.5"
+    />
+<Spinner
+	android:id="@+id/accent_spinner"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:prompt="@string/accent_prompt"
+    android:layout_weight="0.5"
+	/>
+	</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.5"
+    ><TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:text="@string/pitch_prompt"
+    android:layout_weight="0.5"
+    />
+<Spinner
+	android:id="@+id/pitch_spinner"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:prompt="@string/pitch_prompt"
+    android:layout_weight="0.5"
+	/></LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.5"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:text="@string/speed_prompt"
+    android:layout_weight="0.5"
+    />
+<Spinner
+	android:id="@+id/speed_spinner"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:prompt="@string/speed_prompt"
+    android:layout_weight="0.5"
+	/></LinearLayout>
+<Button
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:text="@string/speak"
+	android:onClick="onSpeakClick"
+    android:layout_weight="0.5"
+	/>
+</LinearLayout>
